@@ -10,7 +10,7 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
       userType: {
-        type: Sequelize.ENUM('0','1','2'),
+        type: Sequelize.ENUM('0', '1', '2'),
       },
       firstName: {
         type: Sequelize.STRING,
@@ -20,7 +20,7 @@ module.exports = {
       },
       email: {
         type: Sequelize.STRING,
-        unique : true,
+        unique: true,
       },
       password: {
         type: Sequelize.STRING,
@@ -33,8 +33,8 @@ module.exports = {
         allowNull: false,
         type: Sequelize.DATE,
       },
-      deletedAt:{
-        type:Sequelize.DATE
+      deletedAt: {
+        type: Sequelize.DATE
       }
     });
   },
